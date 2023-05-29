@@ -1,0 +1,249 @@
+body{
+    background-color: whitesmoke;
+    margin: 0;
+    font-family: 'Hindi Siliguri', sans-serif;
+    line-height: 1.5em;
+    color: whitesmoke;
+  }
+  
+  header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('immagini/4f40f8d182e1d0a76ec6507fe75d76a7.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Hindi Siliguri', sans-serif;
+  }
+  
+  #overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:whitesmoke;
+    height: 120px;
+    border-bottom: 3px solid #022d2d;
+  }
+  
+  #logo h1{
+    font-size: 50px;
+    color: #600;
+  }
+
+  img#icona{
+    width: 70px;
+    height: 70px;
+    align-self: center;
+    margin-right: 15px;
+  }
+
+  #logo{
+    display: flex;
+    flex-direction: row;
+    margin-right: 350px;
+  }
+
+  
+  #links a{
+    margin: 15px;
+    color: #022d2d;
+    font-weight: bold;
+  }
+
+  
+  #links a.button{
+    color: whitesmoke;
+  }
+
+  
+  a:visited{
+    color:whitesmoke;
+  }
+
+ .container{
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+
+ section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+ }
+
+ .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+
+ img.boxes{
+    width: 70px;
+    height: 70px;
+    border: 3px solid #022d2d;
+ }
+
+ p{
+    color: #022d2d;
+    font-size: 20px;
+ }
+
+ 
+
+  #menu {
+    display: none;
+  }
+  
+  #menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+  
+  
+
+  .button{
+    background-color: #022d2d;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  h2{
+    color: #022d2d;
+    margin-top: 0;
+  }
+
+  h3{
+    color: #022d2d;
+    margin-top: 0;
+  }
+  
+   div.container h1{
+    z-index: 1;
+    line-height: 1.3em;
+    width: 60%;
+    margin-left: 40px;
+  }
+
+  .quadro{
+    background-color:white;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin-right: 70px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer{
+    background-color: black;
+      color: whitesmoke;
+      height: 10rem;
+      font-size: 20px;
+    
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      position: absolute;
+      bottom:0;
+      width: 100%;
+  }
+
+#bottone{
+  opacity: 0;
+}
+
+#pagina{
+  position: relative;
+  min-height: 50vh;
+  top: 20px;
+  width: auto;
+}
+
+@media (max-width: 500px) {
+
+  header{
+    position: absolute;
+  }
+
+  #pagina{
+    min-height: 100vh;
+    top: 700px;
+  }
+    
+    #menu {
+        display: block;
+    }
+
+    #links {
+        display: none;
+    }
+
+
+    header h1 {
+      font-size: 2em;
+      justify-self: center;
+    }
+
+    section{
+      flex-direction: column;
+      padding-bottom: 10rem;
+    }
+
+    .quadro{
+      opacity: 0;
+    }
+     
+    #bottone{
+      opacity: 1;
+      width: 70px;
+      height: 40px;
+      padding-top: 15px;
+      align-self: center;
+      margin: 20px;
+    }
+
+    footer{
+      width: 700px;
+    }
+
+    .box{
+      text-align: center;
+    }
+
+
+  }

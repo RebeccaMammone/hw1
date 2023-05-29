@@ -1,0 +1,158 @@
+body{
+    margin: 0 auto;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    line-height: 1.5em;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    
+}
+
+h1{
+    margin: auto;
+    font-size: 70px;
+    color: #600;
+}
+
+h2{
+    font-size: 35px;
+}
+
+img{
+    width: 90px;
+    margin-right: 20px;
+}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 650px;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+}
+
+.bianco{
+    background-color: whitesmoke;
+    color: #022d2d;
+    width: 50%;
+    border-radius:20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.verde{
+    background-color: #022d2d;
+    color: whitesmoke;
+    width: 50%;
+    border-radius:0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    background-color: whitesmoke;
+    color: #022d2d;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+a:hover{
+    background-color:black;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    padding: 8px;
+}
+
+input{
+    width: 300px;
+    display:flex;
+
+    border: 1px solid #d9dadc;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.username, .password {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+
+.submit input{
+    background-color: #022d2d;
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 20px;
+    width: 75px;
+    margin-top: 10px;
+}
+
+.submit input:hover{
+    background-color: whitesmoke;
+    border: 2px solid #022d2d;
+    padding: 13px;
+    color: #022d2d;
+}
+
+@media (max-width: 500px) {
+
+      .container{
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(0,0,0,0.8) 0 0 0px;
+        width: 500px;
+      }
+
+      .bianco, .verde{
+        border-radius: 0px;
+        padding: 35px;
+      }
+
+      .bianco{
+        border: 3px solid black;
+      }
+
+      
+  
+    }
